@@ -1,1 +1,2 @@
-theme: jekyll-theme-minimal
+encoding: "utf-8"
+exclude: [".gitignore", "_config.yml", "build", "LICENSE.md", "README.md"]
