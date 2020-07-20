@@ -31,7 +31,7 @@ textarea {
 	background-color : rgba(32, 32, 32, 1.0);
 	color : white;
 	margin-top : 3rem;
-	padding-bottom : 4rem;
+	padding-bottom : 2rem;
 	padding-top : 2rem;
 }
 
@@ -72,38 +72,38 @@ textarea {
 	width : 30px;
 }
 
-a[href = "#furnitures"] {
+a[href = "#furnitures-section"] {
 	background-color : rgba(215, 20, 30, 1.0);
 	color : white;
 	width : 8rem;
 	margin-right : 1rem;
 }
 
-a[href = "#souvenirs"] {
+a[href = "#souvenirs-section"] {
 	background-color : white;
 	color : black;
 	width : 8rem;
 	margin-right : 1rem;
 }
 
-a[href = "#miscellaneous"] {
+a[href = "#miscellaneous-section"] {
 	background-color : rgba(32, 32, 32, 1.0);
 	color : white;
 	width : 8rem;
 	margin-right : 1rem;
 }
 
-a[href = "#furnitures"]:hover {
+a[href = "#furnitures-section"]:hover {
 	background-color : rgba(235, 40, 50, 1.0);
 	color : white;
 }
 
-a[href = "#souvenirs"]:hover {
+a[href = "#souvenirs-section"]:hover {
 	background-color : rgba(255, 255, 255, 0.80);
 	color : black;
 }
 
-a[href = "#miscellaneous"]:hover {
+a[href = "#miscellaneous-section"]:hover {
 	background-color : rgba(52, 52, 52, 1.0);
 	color : white;
 }

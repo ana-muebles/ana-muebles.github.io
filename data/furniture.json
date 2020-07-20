@@ -1,26 +1,96 @@
 [{
-	"thumbnail" : "img1.jpg",
-	"title" : "Armario",
-	"description" : "Un armario de 4 puertas corredizas y flotantes.",
+	"thumbnail" : "thumb-1.jpg",
+	"title" : "Escritorio para PC",
+	"description" : "Hecho en madera de melamina de alta densidad enchapada en madera y lustrado con varias capas de cetol.",
 	"images" : []
 }, {
-	"thumbnail" : "img1.jpg",
-	"title" : "Armario",
-	"description" : "Un armario de 4 puertas corredizas y flotantes.",
+	"thumbnail" : "thumb-2.jpg",
+	"title" : "Mesa Rústica",
+	"description" : "Hecha con madera de pallets patinada, utilizando herrajes torcidos de hierro para elevar la mesada.",
 	"images" : []
 }, {
-	"thumbnail" : "img1.jpg",
-	"title" : "Armario",
-	"description" : "Un armario de 4 puertas corredizas y flotantes.",
+	"thumbnail" : "thumb-3.jpg",
+	"title" : "Plataforma de Fibro-Fácil",
+	"description" : "Diseñada para sostener un electrodoméstico, o para utilizarla como banco. Permite almacenar botellas debajo de ella.",
 	"images" : []
 }, {
-	"thumbnail" : "img1.jpg",
-	"title" : "Armario",
-	"description" : "Un armario de 4 puertas corredizas y flotantes.",
+	"thumbnail" : "thumb-4.jpg",
+	"title" : "Tocadiscos, Porta CDs y Vinilos",
+	"description" : "Todo integrado: vitrina para tocadiscos, boxes para vinilos, 2 torres y un cajón porta CDs.",
 	"images" : []
 }, {
-	"thumbnail" : "img1.jpg",
-	"title" : "Armario",
-	"description" : "Un armario de 4 puertas corredizas y flotantes.",
+	"thumbnail" : "thumb-5.jpg",
+	"title" : "Estantería de Pino",
+	"description" : "Hecha en pino finger-joint para un almacén.",
+	"images" : []
+}, {
+	"thumbnail" : "thumb-6.jpg",
+	"title" : "Mesa de Comedor",
+	"description" : "Ideal para cenar, 8 personas sentadas, lustrada con laca poliuretánica. La mesada flota sobre la base.",
+	"images" : []
+}, {
+	"thumbnail" : "thumb-7.jpg",
+	"title" : "Estantería Grande",
+	"description" : "Para almacén, hecha de pino. Con espacio para colocar heladera horizontal debajo de ella.",
+	"images" : []
+}, {
+	"thumbnail" : "thumb-8.jpg",
+	"title" : "Armario Simple",
+	"description" : "Con cajón y 2 percheros separados. De fibro fácil, pintado de blanco con látex sintético.",
+	"images" : []
+}, {
+	"thumbnail" : "thumb-9.jpg",
+	"title" : "Botiquín Vertical",
+	"description" : "Para el baño o la cocina, con 3 compartimientos y puerta.",
+	"images" : []
+}, {
+	"thumbnail" : "thumb-10.jpg",
+	"title" : "Guardaropa Vertical",
+	"description" : "Fibro-fácil pintado con látex sintético blanco. Tapa de fondo de melamina negra.",
+	"images" : []
+}, {
+	"thumbnail" : "thumb-11.jpg",
+	"title" : "Mesa Recibidor o de Entrada",
+	"description" : "Con 3 cajones, fondo negro de melamina. Un estante y mesada con vidrio. Sin tornillos a la vista.",
+	"images" : []
+}, {
+	"thumbnail" : "thumb-12.jpg",
+	"title" : "Escritorio Simple para PC",
+	"description" : "Con bandeja amplia para teclado, hecho en madera reciclada y pintado con látex sintético.",
+	"images" : []
+}, {
+	"thumbnail" : "thumb-13.jpg",
+	"title" : "Alacena Reciclada",
+	"description" : "Pintada en látex sintético, con 3 puertas y estantería.",
+	"images" : []
+}, {
+	"thumbnail" : "thumb-14.jpg",
+	"title" : "Toallero con Puertas",
+	"description" : "Para el dormitorio, con cajonera y puerta para prendas pequeñas.",
+	"images" : []
+}, {
+	"thumbnail" : "thumb-15.jpg",
+	"title" : "Mesa Circular Extensible",
+	"description" : "Se puede utilizar como mesa circular o se puede extender con un mecanismo integrado oculto debajo de la mesa.",
+	"images" : []
+}, {
+	"thumbnail" : "thumb-16.jpg",
+	"title" : "Bajo Mesada para Cocina",
+	"description" : "Mueble a medida listo para instalar bajo mesada en una cocina. Puertas con vidrio, estantería y cajonera, todo patinado.",
+	"images" : []
+}, {
+	"thumbnail" : "thumb-17.jpg",
+	"title" : "Armario Grande",
+	"description" : "Con pantalonero y 2 percheros telescópicos. Dos cajones, estantería para ropa y zapatero verrtical.",
+	"images" : []
+}, {
+	"thumbnail" : "thumb-18.jpg",
+	"title" : "Mesada para Notebook",
+	"description" : "Con cajón, pequeña para escribir, leer o trabajar con una notebook.",
+	"images" : []
+}, {
+	"thumbnail" : "thumb-19.jpg",
+	"title" : "Porta Revistas Recibidor",
+	"description" : "Ideal como recibidor para dejar las llaves, decorar la entrada y almacenar revistas. Patinada en blanco, hecha con pallets.",
 	"images" : []
 }]
