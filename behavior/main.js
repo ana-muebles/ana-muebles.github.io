@@ -12,9 +12,36 @@
 			"</div>");
 	};
 
+	function addFurnitureCard(furniture) {
+		addCard("#furnitures", "furniture/" + furniture.thumbnail, furniture.title, furniture.description);
+	}
+
+	function addSourvenirCard(souvenir) {
+		addCard("#souvenirs", "souvenir/" + souvenir.thumbnail, souvenir.title, souvenir.description);
+	}
+
+	function addMiscellaneousCard(miscellaneous) {
+		addCard("#miscellaneous", "miscellaneous/" + miscellaneous.thumbnail, miscellaneous.title, miscellaneous.description);
+	}
+
+	function loadData(source, adder) {
+		$.getJSON("../data/" + source, function (data) {
+			for (var i = 0; i < data.length; ++i) {
+				adder(data[i]);
+			}
+		});
+	}
+
 	emailjs.init("user_vP6GnRzJr7w8EKGUQvS5I");
 
 	$(function () {
+		$(".sliding-link").click(function (event) {
+			event.preventDefault();
+			const aid = $(this).attr("href");
+			$("html,body").animate({
+				scrollTop : $(aid).offset().top
+			}, "slow");
+		});
 		document.getElementById("contact-form")
 			.addEventListener("submit", function (event) {
 				event.preventDefault();
@@ -28,9 +55,8 @@
 						console.log("Fallo al enviar mensaje.", error);
 					});
 			});
-		$.getJSON("../data/furniture.json", function (data) {
-			console.log(data);
-		});
-		addCard("#furniture", "furniture/img1.jpg", "Armario", "Un armario de 4 puertas corredizas y flotantes.");
+		loadData("furniture.json", addFurnitureCard);
+		loadData("souvenir.json", addFurnitureCard);
+		loadData("miscellaneous.json", addFurnitureCard);
 	});
 })(document);
