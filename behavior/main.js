@@ -16,7 +16,7 @@
 		addCard("#furnitures", "furniture/" + furniture.thumbnail, furniture.title, furniture.description);
 	}
 
-	function addSourvenirCard(souvenir) {
+	function addSouvenirCard(souvenir) {
 		addCard("#souvenirs", "souvenir/" + souvenir.thumbnail, souvenir.title, souvenir.description);
 	}
 
@@ -24,8 +24,25 @@
 		addCard("#miscellaneous", "miscellaneous/" + miscellaneous.thumbnail, miscellaneous.title, miscellaneous.description);
 	}
 
-	function loadData(source, adder) {
+	function displayCount(selector, count) {
+		$(selector).text("Total: " + count);
+	}
+
+	function countFurnitures(count) {
+		displayCount("#total-furnitures", count);
+	}
+
+	function countSouvenirs(count) {
+		displayCount("#total-souvenirs", count);
+	}
+
+	function countMiscellaneous(count) {
+		displayCount("#total-miscellaneous", count);
+	}
+
+	function loadData(source, adder, counter) {
 		$.getJSON("../data/" + source, function (data) {
+			counter(data.length);
 			for (var i = 0; i < data.length; ++i) {
 				adder(data[i]);
 			}
@@ -55,8 +72,8 @@
 						console.log("Fallo al enviar mensaje.", error);
 					});
 			});
-		loadData("furniture.json", addFurnitureCard);
-		loadData("souvenir.json", addFurnitureCard);
-		loadData("miscellaneous.json", addFurnitureCard);
+		loadData("furniture.json", addFurnitureCard, countFurnitures);
+		loadData("souvenir.json", addSouvenirCard, countSouvenirs);
+		loadData("miscellaneous.json", addMiscellaneousCard, countMiscellaneous);
 	});
 })(document);

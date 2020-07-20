@@ -18,6 +18,11 @@ textarea {
 	min-height : 3rem;
 }
 
+.badge-danger {
+	font-weight : 300;
+	padding : 0.5rem;
+}
+
 .card-columns {
 	margin-bottom : 4rem;
 }
@@ -115,5 +120,5 @@ a[href = "#miscellaneous"]:hover {
 
 /* Debug */
 div, span {
-	border : 1px dashed black;
+	/*border : 1px dashed black;*/
 }
