@@ -1,0 +1,79 @@
+a:hover {
+	text-decoration : none;
+}
+
+body {
+	font-family : "Raleway", sans-serif;
+}
+
+h1, h6 {
+	margin-top : 0.5rem;
+}
+
+img.logo {
+	max-height : 3rem;
+}
+
+textarea {
+	min-height : 3rem;
+}
+
+.footer {
+	background-color : rgba(32, 32, 32, 1.0);
+	color : white;
+	margin-top : 3rem;
+	padding-bottom : 4rem;
+	padding-top : 2rem;
+}
+
+.form-control {
+	margin-top : 1rem;
+}
+
+.jumbotron {
+	background-image : url("../image/jumbotron.jpg");
+	background-size : cover;
+	height : 100%;
+	padding-top : 8rem;
+	padding-bottom : 8rem;
+}
+
+.jumbotron h1, .jumbotron p {
+	background-color : rgba(255, 255, 255, 0.55);
+	padding-left : 1rem;
+	padding-right : 1rem;
+	font-weight : 400;
+}
+
+.jumbotron img {
+	max-height : 13rem;
+}
+
+.logo {
+	color : rgba(215, 20, 30, 1.0);
+	font-weight : 500;
+}
+
+.modal-footer button {
+	width : 100%;
+}
+
+.modal-header img {
+	margin-right : 0.75rem;
+	width : 30px;
+}
+
+#send-button:disabled {
+	background-color : rgba(220, 220, 220, 1.0);
+	color : rgba(160, 160, 160, 1.0);
+}
+
+#send-button:hover:enabled {
+	background-color : rgba(215, 20, 30, 1.0);
+	color : white;
+}
+
+/* Debug */
+div, span {
+	border : 1px dashed black;
+}
