@@ -4,7 +4,7 @@
 	function addCard(selector, image, title, description) {
 		$(selector).append(
 			"<div class = 'card'>" +
-				"<img src = 'image/" + image + "' class = 'card-img-top' alt = '...'>" +
+				"<img src = 'image/" + image + "' class = 'card-img-top' alt = '" + title + "' loading = 'lazy'>" +
 				"<div class = 'card-body'>" +
 					"<h5 class = 'card-title'>" + title + "</h5>" +
 					"<p class = 'card-text'>" + description + "</p>" +

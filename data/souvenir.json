@@ -1,1 +1,71 @@
-[]
+[{
+	"thumbnail" : "thumb-1.jpg",
+	"title" : "Bandeja para Panes",
+	"description" : "Con velas y flores secas.",
+	"images" : []
+}, {
+	"thumbnail" : "thumb-2.jpg",
+	"title" : "Mate",
+	"description" : "Pintado de rojo, con bordes cortados como hojas",
+	"images" : []
+}, {
+	"thumbnail" : "thumb-3.jpg",
+	"title" : "Mate",
+	"description" : "Decorado con papel metálico y cuerdas de hilo sisal.",
+	"images" : []
+}, {
+	"thumbnail" : "thumb-4.jpg",
+	"title" : "Mate",
+	"description" : "Borde metálico, pintado de rojo y negro con margaritas.",
+	"images" : []
+}, {
+	"thumbnail" : "thumb-5.jpg",
+	"title" : "Mate",
+	"description" : "Con forma de berenjena y hojas dibujadas a mano. Borde metálico.",
+	"images" : []
+}, {
+	"thumbnail" : "thumb-6.jpg",
+	"title" : "Mate",
+	"description" : "Pintado con acrílicos, y con una pequeña base de apoyo.",
+	"images" : []
+}, {
+	"thumbnail" : "thumb-7.jpg",
+	"title" : "Mate",
+	"description" : "Con base de apoyo, pastizal y flores dibujadas.",
+	"images" : []
+}, {
+	"thumbnail" : "thumb-8.jpg",
+	"title" : "Mate Grande",
+	"description" : "Con base de apoyo, hecho de piel de toro, pintado e impermeabilizado.",
+	"images" : []
+}, {
+	"thumbnail" : "thumb-9.jpg",
+	"title" : "Arreglos Florales en Altar",
+	"description" : "Hechos para una capilla, durante una celebración.",
+	"images" : []
+}, {
+	"thumbnail" : "thumb-10.jpg",
+	"title" : "Arreglos Florales para Bancos",
+	"description" : "Ubicados en las esquinas centrales de una capilla, para decorar el pasillo central, enlazados con tul blanco.",
+	"images" : []
+}, {
+	"thumbnail" : "thumb-11.jpg",
+	"title" : "Base para Muffins",
+	"description" : "De 2 pisos, con agarradera central. Para mostrar muffins, budines pequeños o masitas en general.",
+	"images" : []
+}, {
+	"thumbnail" : "thumb-12.jpg",
+	"title" : "Arreglo Floral con Caída",
+	"description" : "Para ubicar en el borde central de una mesa.",
+	"images" : []
+}, {
+	"thumbnail" : "thumb-13.jpg",
+	"title" : "Pequeña Capilla",
+	"description" : "Hecha de fibro-fácil, con vitraux simulado de fondo.",
+	"images" : []
+}, {
+	"thumbnail" : "thumb-14.jpg",
+	"title" : "Lámparas Colgantes",
+	"description" : "Hechas de fibro-fácil, listas para decorar y pintar.",
+	"images" : []
+}]
