@@ -51,25 +51,66 @@
 
 	emailjs.init("user_vP6GnRzJr7w8EKGUQvS5I");
 
+	toastr.options = {
+		"closeButton" : false,
+		"debug" : false,
+		"newestOnTop" : true,
+		"progressBar" : true,
+		"positionClass" : "toast-top-right",
+		"preventDuplicates" : false,
+		"onclick" : null,
+		"showDuration" : "300",
+		"hideDuration" : "1000",
+		"timeOut" : "5000",
+		"extendedTimeOut" : "1000",
+		"showEasing" : "swing",
+		"hideEasing" : "linear",
+		"showMethod" : "fadeIn",
+		"hideMethod" : "fadeOut"
+	};
+
 	$(function () {
+		const contactForm = $("#contact-form");
+		const sendButton = $("#send-button");
+		contactForm.parsley({
+			"data-parsley-focus" : "first",
+			"data-parsley-ui-enabled" : true,
+			"errorTemplate" : "<small></small>",
+			"errorsWrapper" : "<span class = 'form-error'></span>"
+		});
+		$("#contact-form .form-control").on("input propertychange paste", () => {
+			if (contactForm.parsley().isValid() == true) {
+				sendButton.removeAttr("disabled");
+			}
+			else {
+				sendButton.attr("disabled", "disabled");
+			}
+		});
 		$(".sliding-link").click(function (event) {
 			event.preventDefault();
 			const aid = $(this).attr("href");
-			$("html,body").animate({
+			$("html, body").animate({
 				scrollTop : $(aid).offset().top
 			}, "slow");
 		});
 		document.getElementById("contact-form")
 			.addEventListener("submit", function (event) {
+				const thisForm = this;
+				sendButton.html("<div class = 'spinner-border spinner-border-sm' role = 'status'/>");
+				sendButton.attr("disabled", "disabled");
 				event.preventDefault();
-				this.id.value = 1E+9 * Math.random() | 0;
-				console.log("Sending form...");
-				console.log(this);
+				thisForm.id.value = 1E+9 * Math.random() | 0;
 				emailjs.sendForm("Z6Dl67fFuCSKMjACs1jTfKnenHovoy5g", "W2ocWyuUVb32I2W8r6uwj8G6gzEG9xPZ", this)
 					.then(function (response) {
-						console.log("Mensaje enviado.", response.status, response.text);
+						thisForm.reset();
+						sendButton.html("Enviar");
+						toastr["success"]("Nos contactaremos con usted al número telefónico indicado, lo antes posible.",
+							"Consulta enviada!");
 					}, function (error) {
-						console.log("Fallo al enviar mensaje.", error);
+						sendButton.removeAttr("disabled");
+						sendButton.html("Enviar");
+						toastr["error"]("Hubo un problema al enviar su consulta... ¡pero es nuestro!. Inténtelo nuevamente o dentro de unos minutos. ¿Tiene conexión a internet?",
+							"Error al enviar consulta");
 					});
 			});
 		loadData("furniture.json", addFurnitureCard, countFurnitures);

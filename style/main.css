@@ -39,6 +39,10 @@ textarea {
 	margin-top : 1rem;
 }
 
+.form-error {
+	color : rgba(230, 0, 0, 1.0);
+}
+
 .jumbotron {
 	background-image : url("../image/jumbotron.jpg");
 	background-size : cover;

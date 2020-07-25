@@ -9,6 +9,8 @@
 			integrity = "sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin = "anonymous">
 		<link rel = "stylesheet" href = "https://fonts.googleapis.com/css2?family=Raleway"
 			integrity = "sha384-2dyylqKLfY47QfcAWmXX3vDRaZMf4bszNfsTuuVf8/8mhrkgvkB052sp0nfpE8HS" crossorigin = "anonymous">
+		<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.css"
+			integrity = "sha384-YzEqZ2pBV0i9OmlTyoz75PqwTR8If8GsXBv7HLQclEVqIC3VxIt98/U94ES6CJTR" crossorigin = "anonymous">
 		<link rel = "stylesheet" href = "style/main.css">
 	</head>
 	<body>
@@ -135,25 +137,42 @@
 					<div class = "modal-body">
 						Envíe su consulta y será respondida a la brevedad (<em>todos los campos son requeridos</em>):
 						<div class = "container-fluid">
-							<form id = "contact-form">
+							<form id = "contact-form" data-parsley-validate>
 								<input type = "hidden" name = "id">
 								<div class = "form-row">
 									<div class = "col-sm-6">
-										<input type = "text" class = "form-control" placeholder = "Nombre" name = "name" maxlength = "64" required>
+										<input type = "text" class = "form-control" placeholder = "Nombre" name = "name" maxlength = "64" required
+											data-parsley-errors-container = "#name-errors"
+											data-parsley-trigger = "change"
+											data-parsley-error-message = "Indique su nombre.">
 									</div>
 									<div class = "col-sm-6">
-										<input type = "text" class = "form-control" placeholder = "Apellido" name = "surname" maxlength = "64" required>
+										<input type = "text" class = "form-control" placeholder = "Apellido" name = "surname" maxlength = "64" required
+											data-parsley-errors-container = "#surname-errors"
+											data-parsley-trigger = "change"
+											data-parsley-error-message = "Indique su apellido.">
 									</div>
+									<div class = "col-sm-6" id = "name-errors"></div>
+									<div class = "col-sm-6" id = "surname-errors"></div>
 								</div>
 								<div class = "form-row">
 									<div class = "col-sm-12">
-										<input type = "tel" class = "form-control" placeholder = "Teléfono o celular" name = "phone" maxlength = "32" pattern = "^\s*\d(\s*\d|\s*[-/]\s*\d)*\s*$" required>
+										<input type = "tel" class = "form-control" placeholder = "Teléfono o celular" name = "phone" maxlength = "48" pattern = "^[+]?\s*\d(\s*\d|\s*[-/]\s*\d)*\s*$" required
+											data-parsley-errors-container = "#phone-errors"
+											data-parsley-trigger = "change"
+											data-parsley-pattern-message = "No es un número telefónico correcto. E.g.: +54 - 9 - 11 - 0000 - 0000."
+											data-parsley-required-message = "No ha indicado ningún número de teléfono o celular.">
 									</div>
+									<div class = "col-sm-12" id = "phone-errors"></div>
 								</div>
 								<div class = "form-row">
 									<div class = "col-sm-12">
-										<textarea class = "form-control" placeholder = "Su consulta..." name = "message" rows = "5" maxlength = "2048" required></textarea>
+										<textarea class = "form-control" placeholder = "Su consulta..." name = "message" rows = "5" maxlength = "2048" required
+											data-parsley-errors-container = "#message-errors"
+											data-parsley-trigger = "change"
+											data-parsley-error-message = "No ha indicado cuál es su consulta."></textarea>
 									</div>
+									<div class = "col-sm-12" id = "message-errors"></div>
 								</div>
 							</form>
 						</div>
@@ -179,8 +198,12 @@
 			integrity = "sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin = "anonymous"></script>
 		<script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
 			integrity = "sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin = "anonymous"></script>
-		<script src = "https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
-			integrity = "sha384-OzCTrEe1dZVtsok3BktYYj5sXGs7bkPBzUA5NYdeYPPSWIamKP2zsRtHOH3elMTi" crossorigin = "anonymous"></script>
+		<script src = "https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js"
+			integrity = "sha384-95OUlp3KYY6JMeSM+hESHcMNgHwFUOp5kp7rsBJdWHogkcTAEFhMb6nwpgVcVUVv" crossorigin = "anonymous"></script>
+		<script src = "https://cdn.jsdelivr.net/npm/emailjs-com@2.6.3/dist/email.min.js"
+			integrity = "sha384-Rp+K73+yYwi+LUkRVQlQl+V4CR2dM/f/E5gH2Fg57Km4J0EOiUleYlsTWRLUPRV0" crossorigin = "anonymous"></script>
+		<script src = "https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js"
+			integrity = "sha384-VDls8ImYGI8SwVxpmjX2Bn27U2TcNodzTNROTusVEWO55+lmL+H9NczoQJk6mwZR" crossorigin = "anonymous"></script>
 		<script src = "behavior/main.js"></script>
 	</body>
 </html>
