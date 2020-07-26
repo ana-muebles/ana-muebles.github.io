@@ -1,0 +1,19 @@
+{
+	"private" : true,
+	"author" : "Ana Muebles",
+	"description" : "GitHub Pages user site.",
+	"homepage" : "https://ana-muebles.github.io/",
+	"license" : "SEE LICENSE IN LICENSE.md",
+	"name" : "ana-muebles.github.io",
+	"repository" : "github:ana-muebles/ana-muebles.github.io",
+	"version" : "0.1.0",
+	"scripts" : {
+		"start" : "http-server -a localhost -p 8080 -c-1 ../"
+	},
+	"dependencies" : {
+	},
+	"devDependencies" : {
+		"gulp" : "^4.0.2",
+		"http-server" : "^0.12.3"
+	}
+}
