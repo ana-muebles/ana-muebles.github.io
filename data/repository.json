@@ -1,0 +1,41 @@
+[{
+	"id" : "0",
+	"type" : "catalog",
+	"name" : "Muebles",
+	"icon" : "image/icon/furniture.svg",
+	"iconActive" : "image/icon/furniture-white.svg",
+	"source" : "data/furniture.json",
+	"description" : "Estos son algunos de los muebles que diseñamos y construimos. ¡Todos son personalizados!"
+}, {
+	"id" : "1",
+	"type" : "catalog",
+	"name" : "Souvenirs",
+	"icon" : "image/icon/souvenir.svg",
+	"iconActive" : "image/icon/souvenir-white.svg",
+	"source" : "data/souvenir.json",
+	"description" : "Souvenirs para decorar y regalar de todo tipo. ¡Los mates se pueden usar para tomar!"
+}, {
+	"id" : "2",
+	"type" : "catalog",
+	"name" : "Reciclados",
+	"icon" : "image/icon/recycled.svg",
+	"iconActive" : "image/icon/recycled-white.svg",
+	"source" : "data/recycled.json",
+	"description" : "Muebles y sillas recicladas... ¡quedaron como nuevos!"
+}, {
+	"id" : "3",
+	"type" : "catalog",
+	"name" : "Arreglos Florales",
+	"icon" : "image/icon/flower.svg",
+	"iconActive" : "image/icon/flower-white.svg",
+	"source" : "data/flower.json",
+	"description" : "Arreglos florales de todo tipo y para cualquier evento, grandes y pequeños."
+}, {
+	"id" : "4",
+	"type" : "catalog",
+	"name" : "Carpintería en General",
+	"icon" : "image/icon/misc.svg",
+	"iconActive" : "image/icon/misc-white.svg",
+	"source" : "data/misc.json",
+	"description" : "Trabajos adicionales de carpintería que realizamos en estos últimos años."
+}]

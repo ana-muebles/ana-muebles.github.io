@@ -1,0 +1,11 @@
+button[data-target="#contact-modal"] {
+	display : none;
+}
+
+noscript p {
+	margin-top : 1rem;
+}
+
+noscript .row {
+	background-color : var(--warning-background);
+}

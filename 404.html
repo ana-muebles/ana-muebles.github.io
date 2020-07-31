@@ -2,29 +2,148 @@
 <html lang = "es-AR">
 	<head>
 		<meta charset = "UTF-8">
-		<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-		<title>Ana Muebles</title>
+		<meta name = "viewport" content = "width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		<title>Ana Muebles: Error!</title>
 		<link rel = "icon" href = "image/icon/favicon.svg" sizes = "any" type = "image/svg+xml">
 		<link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
 			integrity = "sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin = "anonymous">
+		<link rel = "stylesheet" href = "https://fonts.googleapis.com/css2?family=Raleway"
+			integrity = "sha384-2dyylqKLfY47QfcAWmXX3vDRaZMf4bszNfsTuuVf8/8mhrkgvkB052sp0nfpE8HS" crossorigin = "anonymous">
+		<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.css"
+			integrity = "sha384-YzEqZ2pBV0i9OmlTyoz75PqwTR8If8GsXBv7HLQclEVqIC3VxIt98/U94ES6CJTR" crossorigin = "anonymous">
+		<link rel = "stylesheet" href = "style/main.css">
+		<link rel = "stylesheet" href = "style/error.css">
 	</head>
 	<body>
-		<header>
-			<h1>Error</h1>
-		</header>
-		<article>
-			<section>
-				<p>La página solicitada no existe.</p>
-				<a href = "https://ana-muebles.github.io/">Volver</a>
-			</section>
-		</article>
-		<footer></footer>
-		<noscript>Se debe habilitar JavaScript para visualizar este sitio correctamente.</noscript>
-		<script src = "https://code.jquery.com/jquery-3.5.1.slim.min.js"
-			integrity = "sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin = "anonymous"></script>
+		<nav class = "navbar navbar-expand justify-content-between">
+			<a class = "navbar-brand" href = "/">
+				<img src = "image/icon/brand.svg" height = "50" alt = "">
+			</a>
+			<button class = "btn btn-block" type = "button" data-toggle = "modal" data-target = "#contact-modal">Contacto</button>
+		</nav>
+		<noscript>
+			<link rel = "stylesheet" href = "style/no-script.css">
+			<div class = "container-fluid">
+				<div class = "row align-items-center justify-content-center">
+					<div class = "col-auto">
+						<div class = "spinner-grow spinner-grow-sm"></div>
+					</div>
+					<div class = "col-auto">
+						<p class = "text-center">Para visualizar esta página correctamente, debe habilitar <b>JavaScript</b>.</p>
+					</div>
+				</div>
+			</div>
+		</noscript>
+		<div class = "jumbotron jumbotron-fluid">
+			<div class = "container-fluid">
+				<div class = "row align-items-start justify-content-center">
+					<div class = "col-auto col-md-10 col-lg-8 text-center">
+						<img class = "animate img-fluid" src = "image/icon/blade-shadow.svg" alt = "">
+						<p class = "display-4">
+							<span>Error</span>
+						</p>
+						<p class = "lead">La página solicitada no existe. Haga click <a href = "/">aquí</a> para volver a un lugar seguro.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class = "container-fluid">
+				<div class = "row justify-content-end">
+					<div class = "col-auto">
+						<p class = "float-right">© 2020 Ana Muebles.</p>
+						<address>
+							<small class = "float-right">Lomas de Zamora, Buenos Aires, Argentina.</small>
+						</address>
+					</div>
+					<div class = "col-auto align-self-start">
+						<img src = "image/icon/blade-white.svg" width = "50" height = "50" alt = "">
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class = "modal fade" id = "contact-modal" data-backdrop = "static" data-keyboard = "false" tabindex = "-1" role = "dialog">
+			<div class = "modal-dialog">
+				<div class = "modal-content">
+					<div class = "modal-header">
+						<img src = "image/icon/mailbox.svg" height = "30" alt = "">
+						<h5 class = "modal-title" id = "contact-modal-label">Contacto</h5>
+						<button type = "button" class = "close" data-dismiss = "modal">
+							<img src = "image/icon/close.svg" width = "32" height = "32" alt = "">
+						</button>
+					</div>
+					<div class = "modal-body">
+						Envíe su consulta y será respondida a la brevedad (<em>todos los campos son requeridos</em>):
+						<div class = "container-fluid">
+							<form id = "contact-form" data-parsley-validate>
+								<input type = "hidden" name = "id">
+								<div class = "form-row">
+									<div class = "col-6">
+										<input type = "text" class = "form-control" placeholder = "Nombre" name = "name" maxlength = "64" required
+											data-parsley-errors-container = "#name-errors"
+											data-parsley-trigger = "change"
+											data-parsley-error-message = "Indique su nombre.">
+									</div>
+									<div class = "col-6">
+										<input type = "text" class = "form-control" placeholder = "Apellido" name = "surname" maxlength = "64" required
+											data-parsley-errors-container = "#surname-errors"
+											data-parsley-trigger = "change"
+											data-parsley-error-message = "Indique su apellido.">
+									</div>
+									<div class = "col-6" id = "name-errors"></div>
+									<div class = "col-6" id = "surname-errors"></div>
+								</div>
+								<div class = "form-row">
+									<div class = "col-12">
+										<input type = "tel" class = "form-control" placeholder = "Teléfono o celular" name = "phone" maxlength = "48" pattern = "^[+]?\s*\d(\s*\d|\s*[-/]\s*\d)*\s*$" required
+											data-parsley-errors-container = "#phone-errors"
+											data-parsley-trigger = "change"
+											data-parsley-pattern-message = "No es un número telefónico correcto. E.g.: +54 - 9 - 11 - 0000 - 0000."
+											data-parsley-required-message = "No ha indicado ningún número de teléfono o celular.">
+									</div>
+									<div class = "col-12" id = "phone-errors"></div>
+								</div>
+								<div class = "form-row">
+									<div class = "col-12">
+										<textarea class = "form-control" placeholder = "Su consulta..." name = "message" rows = "5" maxlength = "2048" required
+											data-parsley-errors-container = "#message-errors"
+											data-parsley-trigger = "change"
+											data-parsley-error-message = "No ha indicado cuál es su consulta."></textarea>
+									</div>
+									<div class = "col-12" id = "message-errors"></div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class = "modal-footer">
+						<div class = "container-fluid">
+							<div class = "row">
+								<div class = "col-6">
+									<button type = "submit" class = "btn btn-outline-dark" id = "send-button" form = "contact-form" disabled>Enviar</button>
+								</div>
+								<div class = "col-6">
+									<button type = "button" class = "btn btn-dark" data-dismiss = "modal">Cancelar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src = "https://code.jquery.com/jquery-3.5.1.min.js"
+			integrity = "sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin = "anonymous"></script>
 		<script src = "https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
 			integrity = "sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin = "anonymous"></script>
 		<script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
 			integrity = "sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin = "anonymous"></script>
+		<script src = "https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js"
+			integrity = "sha384-95OUlp3KYY6JMeSM+hESHcMNgHwFUOp5kp7rsBJdWHogkcTAEFhMb6nwpgVcVUVv" crossorigin = "anonymous"></script>
+		<script src = "https://cdn.jsdelivr.net/npm/emailjs-com@2.6.3/dist/email.min.js"
+			integrity = "sha384-Rp+K73+yYwi+LUkRVQlQl+V4CR2dM/f/E5gH2Fg57Km4J0EOiUleYlsTWRLUPRV0" crossorigin = "anonymous"></script>
+		<script src = "https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js"
+			integrity = "sha384-VDls8ImYGI8SwVxpmjX2Bn27U2TcNodzTNROTusVEWO55+lmL+H9NczoQJk6mwZR" crossorigin = "anonymous"></script>
+		<script src = "https://cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"
+			integrity = "sha384-JmTzX6unfJDiDQMoiypqCUI502SrA0RB+F//kF3GrhGq5FRh2rTca4us326Qg7Dl" crossorigin = "anonymous"></script>
+		<script src = "behavior/main.js"></script>
 	</body>
 </html>

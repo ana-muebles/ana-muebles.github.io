@@ -1,0 +1,16 @@
+a {
+	color : var(--link-hover);
+}
+
+a:hover {
+	font-weight : bold;
+}
+
+footer {
+	margin-top : 0;
+}
+
+.jumbotron {
+	margin-bottom : 0;
+	padding : 6rem 0 6rem 0;
+}

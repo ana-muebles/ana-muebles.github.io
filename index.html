@@ -14,124 +14,73 @@
 		<link rel = "stylesheet" href = "style/main.css">
 	</head>
 	<body>
-		<noscript>Habilite <em>JavaScript<em> en su explorador para visualizar este sitio correctamente.</noscript>
-		<div class = "container-fluid" role = "navigation">
-			<div class = "row align-items-center">
-				<div class = "col-sm-3 offset-sm-1">
-					<a href = "#">
-						<div class = "row align-items-center no-gutters">
-							<div class = "col-sm-2">
-								<img class = "img-fluid logo" src = "image/icon/favicon.svg" alt = "Ana Muebles Logo">
-							</div>
-							<div class = "col-sm-auto">
-								<h1 class = "logo">Ana Muebles</h1>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class = "col-sm-2 offset-sm-5">
-					<button class = "btn btn-outline-dark btn-block" type = "button" data-toggle = "modal" data-target = "#contact-modal">Contacto</button>
+		<nav class = "navbar navbar-expand justify-content-between">
+			<a class = "navbar-brand" href = "/">
+				<img src = "image/icon/brand.svg" height = "50" alt = "">
+			</a>
+			<button class = "btn btn-block" type = "button" data-toggle = "modal" data-target = "#contact-modal">Contacto</button>
+		</nav>
+		<noscript>
+			<link rel = "stylesheet" href = "style/no-script.css">
+			<div class = "container-fluid">
+				<div class = "row align-items-center justify-content-center">
+					<div class = "col-auto">
+						<div class = "spinner-grow spinner-grow-sm"></div>
+					</div>
+					<div class = "col-auto">
+						<p class = "text-center">Para visualizar esta página correctamente, debe habilitar <b>JavaScript</b>.</p>
+					</div>
 				</div>
 			</div>
-		</div>
+		</noscript>
 		<div class = "jumbotron jumbotron-fluid">
 			<div class = "container-fluid">
-				<div class = "row align-items-center">
-					<div class = "col-sm-2 offset-sm-1 align-self-start">
-						<img class = "img-fluid" src = "image/icon/tree.svg" alt = "Pino">
-					</div>
-					<div class = "col-sm-8">
-						<div class = "row">
-							<h1 class = "display-1">Ana Muebles</h1>
-						</div>
-						<div class = "row">
-							<p class = "lead">Diseños a medida en madera, melamina/MDF, fibro fácil, finger-joint o enchapado. Pintura, lustrado o barnizado. Trabajos de carpintería en general, arreglos, reciclado, instalación de paneles CoberCor™. Souvenirs y arreglos florales.</p>
-						</div>
-						<div class = "row no-gutters">
-							<div class = "col-sm-auto">
-								<a class = "btn btn-outline-dark btn-block sliding-link" role = "button" href = "#furnitures-section">Muebles</a>
-							</div>
-							<div class = "col-sm-auto">
-								<a class = "btn btn-outline-dark btn-block sliding-link" role = "button" href = "#souvenirs-section">Souvenirs</a>
-							</div>
-							<div class = "col-sm-auto">
-								<a class = "btn btn-outline-dark btn-block sliding-link" role = "button" href = "#miscellaneous-section">Otros</a>
-							</div>
-						</div>
+				<div class = "row align-items-start justify-content-center">
+					<div class = "col-auto col-md-10 col-lg-8 text-center">
+						<img class = "animate img-fluid" src = "image/icon/blade-shadow.svg" alt = "">
+						<p class = "display-4">
+							<span>Lo que hacemos</span>
+						</p>
+						<p class = "lead">Diseños a medida en madera, melamina/MDF, fibro fácil, finger-joint o enchapado. Pintura, lustrado o barnizado. Trabajos de carpintería en general, arreglos, reciclado, instalación de paneles CoberCor™. Souvenirs y arreglos florales.</p>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class = "container-fluid">
-			<hr>
-			<div class = "row align-items-center" id = "furnitures-section">
-				<div class = "col-sm-auto offset-sm-1">
-					<h1 class = "display-4">Muebles</h1>
-				</div>
-				<div class = "col-sm-auto">
-					<span class = "badge badge-pill badge-danger" id = "total-furnitures"></span>
-				</div>
-			</div>
 			<div class = "row">
-				<div class = "col-sm-10 offset-sm-1">
-					<div class = "card-columns" id = "furnitures"></div>
+				<div class = "col-12 col-md-auto">
+					<nav>
+						<div class = "list-group list-group-flush" role = "tablist" id = "catalog-nav"></div>
+					</nav>
 				</div>
-			</div>
-			<hr>
-			<div class = "row align-items-center" id = "souvenirs-section">
-				<div class = "col-sm-auto offset-sm-1">
-					<h1 class = "display-4">Souvenirs</h1>
-				</div>
-				<div class = "col-sm-auto">
-					<span class = "badge badge-pill badge-danger" id = "total-souvenirs"></span>
-				</div>
-			</div>
-			<div class = "row">
-				<div class = "col-sm-10 offset-sm-1">
-					<div class = "card-columns" id = "souvenirs"></div>
-				</div>
-			</div>
-			<hr>
-			<div class = "row align-items-center" id = "miscellaneous-section">
-				<div class = "col-sm-auto offset-sm-1">
-					<h1 class = "display-4">Otros</h1>
-				</div>
-				<div class = "col-sm-auto">
-					<span class = "badge badge-pill badge-danger" id = "total-miscellaneous"></span>
-				</div>
-			</div>
-			<div class = "row">
-				<div class = "col-sm-10 offset-sm-1">
-					<div class = "card-columns" id = "miscellaneous"></div>
+				<div class = "col">
+					<div class = "tab-content" id = "catalog-content"></div>
 				</div>
 			</div>
 		</div>
-		<div class = "container-fluid footer">
-			<div class = "row align-items-center justify-content-around">
-				<div class = "col-sm-auto">
-					<div class = "row align-items-center">
-						<div class = "col-sm-auto">
-							<img class = "logo" src = "image/icon/blade.svg" width = "32px" heigth = "32px" alt = "Ana Muebles Logo Footer">
-						</div>
-						<div class = "col-sm-auto">
-							<h6 class = "float-left">© 2020 Ana Muebles.</h6>
-						</div>
+		<footer>
+			<div class = "container-fluid">
+				<div class = "row justify-content-end">
+					<div class = "col-auto">
+						<p class = "float-right">© 2020 Ana Muebles.</p>
+						<address>
+							<small class = "float-right">Lomas de Zamora, Buenos Aires, Argentina.</small>
+						</address>
+					</div>
+					<div class = "col-auto align-self-start">
+						<img src = "image/icon/blade-white.svg" width = "50" height = "50" alt = "">
 					</div>
 				</div>
-				<div class = "col-sm-auto">
-					<small class = "float-right">Lomas de Zamora, Buenos Aires, Argentina.</small>
-				</div>
 			</div>
-		</div>
-		<div class = "modal fade" id = "contact-modal" data-backdrop = "static" data-keyboard = "false"
-			tabindex = "-1" role = "dialog" aria-labelledby = "contact-modal-label" aria-hidden = "true">
+		</footer>
+		<div class = "modal fade" id = "contact-modal" data-backdrop = "static" data-keyboard = "false" tabindex = "-1" role = "dialog">
 			<div class = "modal-dialog">
 				<div class = "modal-content">
 					<div class = "modal-header">
-						<img src = "image/icon/mailbox.svg" height = "30px" alt = "Mailbox">
+						<img src = "image/icon/mailbox.svg" height = "30" alt = "">
 						<h5 class = "modal-title" id = "contact-modal-label">Contacto</h5>
-						<button type = "button" class = "close" data-dismiss = "modal" aria-label = "Close">
-							<span aria-hidden = "true">×</span>
+						<button type = "button" class = "close" data-dismiss = "modal">
+							<img src = "image/icon/close.svg" width = "32" height = "32" alt = "">
 						</button>
 					</div>
 					<div class = "modal-body">
@@ -140,39 +89,39 @@
 							<form id = "contact-form" data-parsley-validate>
 								<input type = "hidden" name = "id">
 								<div class = "form-row">
-									<div class = "col-sm-6">
+									<div class = "col-6">
 										<input type = "text" class = "form-control" placeholder = "Nombre" name = "name" maxlength = "64" required
 											data-parsley-errors-container = "#name-errors"
 											data-parsley-trigger = "change"
 											data-parsley-error-message = "Indique su nombre.">
 									</div>
-									<div class = "col-sm-6">
+									<div class = "col-6">
 										<input type = "text" class = "form-control" placeholder = "Apellido" name = "surname" maxlength = "64" required
 											data-parsley-errors-container = "#surname-errors"
 											data-parsley-trigger = "change"
 											data-parsley-error-message = "Indique su apellido.">
 									</div>
-									<div class = "col-sm-6" id = "name-errors"></div>
-									<div class = "col-sm-6" id = "surname-errors"></div>
+									<div class = "col-6" id = "name-errors"></div>
+									<div class = "col-6" id = "surname-errors"></div>
 								</div>
 								<div class = "form-row">
-									<div class = "col-sm-12">
+									<div class = "col-12">
 										<input type = "tel" class = "form-control" placeholder = "Teléfono o celular" name = "phone" maxlength = "48" pattern = "^[+]?\s*\d(\s*\d|\s*[-/]\s*\d)*\s*$" required
 											data-parsley-errors-container = "#phone-errors"
 											data-parsley-trigger = "change"
 											data-parsley-pattern-message = "No es un número telefónico correcto. E.g.: +54 - 9 - 11 - 0000 - 0000."
 											data-parsley-required-message = "No ha indicado ningún número de teléfono o celular.">
 									</div>
-									<div class = "col-sm-12" id = "phone-errors"></div>
+									<div class = "col-12" id = "phone-errors"></div>
 								</div>
 								<div class = "form-row">
-									<div class = "col-sm-12">
+									<div class = "col-12">
 										<textarea class = "form-control" placeholder = "Su consulta..." name = "message" rows = "5" maxlength = "2048" required
 											data-parsley-errors-container = "#message-errors"
 											data-parsley-trigger = "change"
 											data-parsley-error-message = "No ha indicado cuál es su consulta."></textarea>
 									</div>
-									<div class = "col-sm-12" id = "message-errors"></div>
+									<div class = "col-12" id = "message-errors"></div>
 								</div>
 							</form>
 						</div>
@@ -180,13 +129,34 @@
 					<div class = "modal-footer">
 						<div class = "container-fluid">
 							<div class = "row">
-								<div class = "col-sm-6">
+								<div class = "col-6">
 									<button type = "submit" class = "btn btn-outline-dark" id = "send-button" form = "contact-form" disabled>Enviar</button>
 								</div>
-								<div class = "col-sm-6">
+								<div class = "col-6">
 									<button type = "button" class = "btn btn-dark" data-dismiss = "modal">Cancelar</button>
 								</div>
 							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class = "modal fade" id = "gallery-modal" data-backdrop = "static" data-keyboard = "false" tabindex = "-1" role = "dialog" data-catalog = "" data-content = "">
+			<div class = "modal-dialog modal-dialog-centered modal-lg">
+				<div class = "modal-content">
+					<div class = "modal-body">
+						<button type = "button" class = "close overlay" data-dismiss = "modal">
+							<img src = "image/icon/close-white.svg" width = "32" height = "32" alt = "">
+						</button>
+						<div class = "carousel slide carousel-fade" data-ride = "carousel" id = "gallery">
+							<ol class = "carousel-indicators" id = "gallery-catalog"></ol>
+							<div class = "carousel-inner" id = "gallery-content"></div>
+							<a class = "carousel-control-prev" href = "#gallery" role = "button" data-slide = "prev">
+								<span class = "carousel-control-prev-icon"></span>
+							</a>
+							<a class = "carousel-control-next" href = "#gallery" role="button" data-slide = "next">
+								<span class = "carousel-control-next-icon"></span>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -204,6 +174,8 @@
 			integrity = "sha384-Rp+K73+yYwi+LUkRVQlQl+V4CR2dM/f/E5gH2Fg57Km4J0EOiUleYlsTWRLUPRV0" crossorigin = "anonymous"></script>
 		<script src = "https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js"
 			integrity = "sha384-VDls8ImYGI8SwVxpmjX2Bn27U2TcNodzTNROTusVEWO55+lmL+H9NczoQJk6mwZR" crossorigin = "anonymous"></script>
+		<script src = "https://cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"
+			integrity = "sha384-JmTzX6unfJDiDQMoiypqCUI502SrA0RB+F//kF3GrhGq5FRh2rTca4us326Qg7Dl" crossorigin = "anonymous"></script>
 		<script src = "behavior/main.js"></script>
 	</body>
 </html>

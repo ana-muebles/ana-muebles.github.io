@@ -1,4 +1,30 @@
+:root {
+	/* Palette */
+	--blood : rgba(230, 16, 16, 1.0);
+	--error : rgba(240, 0, 0, 1.0);
+	--glass : rgba(255, 255, 255, 0.55);
+	--grey : rgba(220, 220, 220, 1.0);
+	--shadow : rgba(32, 32, 32, 1.0);
+	--warning : rgba(255, 200, 16, 1.0);
+
+	--button : white;
+	--button-hover : var(--shadow);
+	--disabled-background : var(--grey);
+	--footer-background : var(--shadow);
+	--glass-box : var(--glass);
+	--hover-button : var(--blood);
+	--link-hover : var(--blood);
+	--main-color : var(--blood);
+	--validation-error : var(--error);
+	--warning-background : var(--warning);
+}
+
+a {
+	color : black;
+}
+
 a:hover {
+	color : var(--link-hover);
 	text-decoration : none;
 }
 
@@ -6,33 +32,62 @@ body {
 	font-family : "Raleway", sans-serif;
 }
 
-h1, h6 {
-	margin-top : 0.5rem;
+footer {
+	background-color : var(--footer-background);
+	color : white;
+	margin-top : 3rem;
+	padding : 2rem 3rem 2rem 3rem;
 }
 
-img.logo {
-	max-height : 3rem;
+nav.navbar {
+	padding-bottom : 0;
+	padding-right : 3rem;
+	padding-top : 0;
+}
+
+nav.navbar button {
+	background-color: var(--button);
+	border-left-color : rgba(0, 0, 0, 0.125);
+	border-radius : 0;
+	border-right-color : rgba(0, 0, 0, 0.125);
+	font-size : 1.25rem;
+	height : 4rem;
+	width : 8rem;
+}
+
+nav.navbar button:hover {
+	background-color : var(--shadow);
+	color : white;
+	font-size : 1.25rem;
+}
+
+small.tip {
+	color : var(--shadow);
 }
 
 textarea {
 	min-height : 3rem;
 }
 
-.badge-danger {
+.badge-pill {
+	background-color : var(--main-color);
+	border-color : var(--main-color);
+	color : white;
 	font-weight : 300;
+	margin-bottom : 1rem;
 	padding : 0.5rem;
 }
 
-.card-columns {
-	margin-bottom : 4rem;
+.btn:focus {
+	box-shadow : none;
 }
 
-.footer {
-	background-color : rgba(32, 32, 32, 1.0);
-	color : white;
-	margin-top : 3rem;
-	padding-bottom : 2rem;
-	padding-top : 2rem;
+.carousel {
+	background-color : var(--shadow);
+}
+
+.carousel img {
+	margin : auto;
 }
 
 .form-control {
@@ -40,35 +95,48 @@ textarea {
 }
 
 .form-error {
-	color : rgba(230, 0, 0, 1.0);
+	color : var(--validation-error);
 }
 
 .jumbotron {
-	background-image : url("../image/jumbotron.jpg");
-	background-size : cover;
+	background-image : url("../image/background/jumbotron.png");
+	background-repeat : repeat;
+	background-size : auto;
 	height : 100%;
-	padding-top : 8rem;
-	padding-bottom : 8rem;
+	padding : 6rem 0 2rem 0;
 }
 
-.jumbotron h1, .jumbotron p {
-	background-color : rgba(255, 255, 255, 0.55);
+.jumbotron p span, .jumbotron .lead {
+	background-color : var(--glass-box);
 	padding-left : 1rem;
 	padding-right : 1rem;
-	font-weight : 400;
 }
 
 .jumbotron img {
-	max-height : 13rem;
+	margin-bottom : 0.75rem;
+	max-height : 10rem;
+	min-height : 2.5rem;
 }
 
-.logo {
-	color : rgba(215, 20, 30, 1.0);
-	font-weight : 500;
+.list-group {
+	margin-bottom : 2rem;
+}
+
+.list-group img {
+	margin-right : 1rem;
+}
+
+.list-group-item.active {
+	background-color : var(--main-color);
+	border-color : var(--main-color);
 }
 
 .modal-footer button {
 	width : 100%;
+}
+
+.modal-header button:focus {
+	outline : none;
 }
 
 .modal-header img {
@@ -76,50 +144,79 @@ textarea {
 	width : 30px;
 }
 
-a[href = "#furnitures-section"] {
-	background-color : rgba(215, 20, 30, 1.0);
-	color : white;
-	width : 8rem;
-	margin-right : 1rem;
+.navbar-brand {
+	color : var(--main-color);
+	font-size : 1.5rem;
+	font-weight : bold;
+	margin-left : 2rem;
 }
 
-a[href = "#souvenirs-section"] {
-	background-color : white;
-	color : black;
-	width : 8rem;
-	margin-right : 1rem;
+.overlay {
+	position : absolute;
+	right : 2rem;
+	top : 2rem;
+	z-index : 1060;
 }
 
-a[href = "#miscellaneous-section"] {
-	background-color : rgba(32, 32, 32, 1.0);
-	color : white;
-	width : 8rem;
-	margin-right : 1rem;
-}
-
-a[href = "#furnitures-section"]:hover {
-	background-color : rgba(235, 40, 50, 1.0);
-	color : white;
-}
-
-a[href = "#souvenirs-section"]:hover {
-	background-color : rgba(255, 255, 255, 0.80);
-	color : black;
-}
-
-a[href = "#miscellaneous-section"]:hover {
-	background-color : rgba(52, 52, 52, 1.0);
-	color : white;
+#gallery-modal .modal-body {
+	padding : 0;
 }
 
 #send-button:disabled {
-	background-color : rgba(220, 220, 220, 1.0);
+	background-color : var(--disabled-background);
 	color : rgba(160, 160, 160, 1.0);
 }
 
 #send-button:hover:enabled {
-	background-color : rgba(215, 20, 30, 1.0);
+	background-color : var(--hover-button);
 	color : white;
+}
+
+@media (max-width : 576px) {
+	footer {
+		font-size : 0.8rem;
+		padding : 1rem 1.5rem 1rem 1.5rem;
+	}
+
+	footer img {
+		height : 32px;
+		margin-top : 1rem;
+		width : 32px;
+	}
+
+	header h1 {
+		font-size : 2rem;
+	}
+
+	nav.navbar {
+		padding-right : 0;
+	}
+
+	nav.navbar button, nav.navbar button:hover {
+		font-size : 1rem;
+		height : 3rem;
+		width : 6rem;
+	}
+
+	p.display-4 {
+		font-size : 2rem;
+	}
+
+	p.lead {
+		font-size : 1rem;
+	}
+
+	small.tip {
+		font-size : 65%;
+	}
+
+	.navbar-brand {
+		margin-left : 0.5rem;
+	}
+
+	.navbar-brand img {
+		height : 2.25rem;
+	}
 }
 
 /* Debug */

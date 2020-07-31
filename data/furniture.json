@@ -1,96 +1,176 @@
 [{
-	"thumbnail" : "thumb-1.jpg",
-	"title" : "Escritorio para PC",
-	"description" : "Hecho en madera de melamina de alta densidad enchapada en madera y lustrado con varias capas de cetol.",
-	"images" : []
+	"id" : "0",
+	"base" : "image/furniture/basket-0/",
+	"thumbnail" : "thumbnail.jpg",
+	"title" : "",
+	"description" : "",
+	"images" : ["01.jpg", "02.jpg", "03.jpg", "04.jpg", "05.jpg", "06.jpg", "07.jpg", "08.jpg", "09.jpg", "10.jpg", "11.jpg"]
 }, {
-	"thumbnail" : "thumb-2.jpg",
-	"title" : "Mesa Rústica",
-	"description" : "Hecha con madera de pallets patinada, utilizando herrajes torcidos de hierro para elevar la mesada.",
-	"images" : []
+	"id" : "1",
+	"base" : "image/furniture/cake-0/",
+	"thumbnail" : "thumbnail.jpg",
+	"title" : "",
+	"description" : "",
+	"images" : ["01.jpg", "02.jpg", "03.jpg", "04.jpg"]
 }, {
-	"thumbnail" : "thumb-3.jpg",
-	"title" : "Plataforma de Fibro-Fácil",
-	"description" : "Diseñada para sostener un electrodoméstico, o para utilizarla como banco. Permite almacenar botellas debajo de ella.",
-	"images" : []
+	"id" : "2",
+	"base" : "image/furniture/cake-1/",
+	"thumbnail" : "thumbnail.jpg",
+	"title" : "",
+	"description" : "",
+	"images" : ["01.jpg", "02.jpg", "03.jpg"]
 }, {
-	"thumbnail" : "thumb-4.jpg",
-	"title" : "Tocadiscos, Porta CDs y Vinilos",
-	"description" : "Todo integrado: vitrina para tocadiscos, boxes para vinilos, 2 torres y un cajón porta CDs.",
-	"images" : []
+	"id" : "3",
+	"base" : "image/furniture/closet-0/",
+	"thumbnail" : "thumbnail.jpg",
+	"title" : "",
+	"description" : "",
+	"images" : ["01.jpg", "02.jpg", "03.jpg", "04.jpg", "05.jpg", "06.jpg", "07.jpg"]
 }, {
-	"thumbnail" : "thumb-5.jpg",
-	"title" : "Estantería de Pino",
-	"description" : "Hecha en pino finger-joint para un almacén.",
-	"images" : []
+	"id" : "4",
+	"base" : "image/furniture/closet-1/",
+	"thumbnail" : "thumbnail.jpg",
+	"title" : "",
+	"description" : "",
+	"images" : ["01.jpg", "02.jpg", "03.jpg", "04.jpg", "05.jpg", "06.jpg", "07.jpg", "08.jpg"]
 }, {
-	"thumbnail" : "thumb-6.jpg",
-	"title" : "Mesa de Comedor",
-	"description" : "Ideal para cenar, 8 personas sentadas, lustrada con laca poliuretánica. La mesada flota sobre la base.",
-	"images" : []
+	"id" : "5",
+	"base" : "image/furniture/closet-2/",
+	"thumbnail" : "thumbnail.jpg",
+	"title" : "",
+	"description" : "",
+	"images" : ["01.jpg", "02.jpg", "03.jpg", "04.jpg", "05.jpg", "06.jpg", "07.jpg", "08.jpg", "09.jpg", "10.jpg"]
 }, {
-	"thumbnail" : "thumb-7.jpg",
-	"title" : "Estantería Grande",
-	"description" : "Para almacén, hecha de pino. Con espacio para colocar heladera horizontal debajo de ella.",
-	"images" : []
+	"id" : "6",
+	"base" : "image/furniture/closet-3/",
+	"thumbnail" : "thumbnail.jpg",
+	"title" : "",
+	"description" : "",
+	"images" : ["01.jpg", "02.jpg", "03.jpg", "04.jpg", "05.jpg", "06.jpg", "07.jpg", "08.jpg", "09.jpg"]
 }, {
-	"thumbnail" : "thumb-8.jpg",
-	"title" : "Armario Simple",
-	"description" : "Con cajón y 2 percheros separados. De fibro fácil, pintado de blanco con látex sintético.",
-	"images" : []
+	"id" : "7",
+	"base" : "image/furniture/closet-4/",
+	"thumbnail" : "thumbnail.jpg",
+	"title" : "",
+	"description" : "",
+	"images" : ["01.jpg", "02.jpg", "03.jpg", "04.jpg", "05.jpg", "06.jpg", "07.jpg", "08.jpg", "09.jpg", "10.jpg"]
 }, {
-	"thumbnail" : "thumb-9.jpg",
-	"title" : "Botiquín Vertical",
-	"description" : "Para el baño o la cocina, con 3 compartimientos y puerta.",
-	"images" : []
+	"id" : "8",
+	"base" : "image/furniture/cupboard-0/",
+	"thumbnail" : "thumbnail.jpg",
+	"title" : "",
+	"description" : "",
+	"images" : ["01.jpg", "02.jpg", "03.jpg", "04.jpg"]
 }, {
-	"thumbnail" : "thumb-10.jpg",
-	"title" : "Guardaropa Vertical",
-	"description" : "Fibro-fácil pintado con látex sintético blanco. Tapa de fondo de melamina negra.",
-	"images" : []
+	"id" : "9",
+	"base" : "image/furniture/cupboard-1/",
+	"thumbnail" : "thumbnail.jpg",
+	"title" : "",
+	"description" : "",
+	"images" : ["01.jpg", "02.jpg"]
 }, {
-	"thumbnail" : "thumb-11.jpg",
-	"title" : "Mesa Recibidor o de Entrada",
-	"description" : "Con 3 cajones, fondo negro de melamina. Un estante y mesada con vidrio. Sin tornillos a la vista.",
-	"images" : []
+	"id" : "10",
+	"base" : "image/furniture/custom-0/",
+	"thumbnail" : "thumbnail.jpg",
+	"title" : "",
+	"description" : "",
+	"images" : ["01.jpg", "02.jpg", "03.jpg", "04.jpg"]
 }, {
-	"thumbnail" : "thumb-12.jpg",
-	"title" : "Escritorio Simple para PC",
-	"description" : "Con bandeja amplia para teclado, hecho en madera reciclada y pintado con látex sintético.",
-	"images" : []
+	"id" : "11",
+	"base" : "image/furniture/custom-1/",
+	"thumbnail" : "thumbnail.jpg",
+	"title" : "",
+	"description" : "",
+	"images" : ["01.jpg", "02.jpg", "03.jpg", "04.jpg"]
 }, {
-	"thumbnail" : "thumb-13.jpg",
-	"title" : "Alacena Reciclada",
-	"description" : "Pintada en látex sintético, con 3 puertas y estantería.",
-	"images" : []
+	"id" : "12",
+	"base" : "image/furniture/desk-0/",
+	"thumbnail" : "thumbnail.jpg",
+	"title" : "",
+	"description" : "",
+	"images" : ["01.jpg", "02.jpg", "03.jpg", "04.jpg", "05.jpg"]
 }, {
-	"thumbnail" : "thumb-14.jpg",
-	"title" : "Toallero con Puertas",
-	"description" : "Para el dormitorio, con cajonera y puerta para prendas pequeñas.",
-	"images" : []
+	"id" : "13",
+	"base" : "image/furniture/desk-1/",
+	"thumbnail" : "thumbnail.jpg",
+	"title" : "",
+	"description" : "",
+	"images" : ["01.jpg", "02.jpg", "03.jpg", "04.jpg", "05.jpg", "06.jpg", "07.jpg"]
 }, {
-	"thumbnail" : "thumb-15.jpg",
-	"title" : "Mesa Circular Extensible",
-	"description" : "Se puede utilizar como mesa circular o se puede extender con un mecanismo integrado oculto debajo de la mesa.",
-	"images" : []
+	"id" : "14",
+	"base" : "image/furniture/kitchen-0/",
+	"thumbnail" : "thumbnail.jpg",
+	"title" : "",
+	"description" : "",
+	"images" : ["01.jpg", "02.jpg", "03.jpg", "04.jpg", "05.jpg", "06.jpg", "07.jpg", "08.jpg", "09.jpg", "10.jpg", "11.jpg", "12.jpg"]
 }, {
-	"thumbnail" : "thumb-16.jpg",
-	"title" : "Bajo Mesada para Cocina",
-	"description" : "Mueble a medida listo para instalar bajo mesada en una cocina. Puertas con vidrio, estantería y cajonera, todo patinado.",
-	"images" : []
+	"id" : "15",
+	"base" : "image/furniture/library-0/",
+	"thumbnail" : "thumbnail.jpg",
+	"title" : "",
+	"description" : "",
+	"images" : ["01.jpg"]
 }, {
-	"thumbnail" : "thumb-17.jpg",
-	"title" : "Armario Grande",
-	"description" : "Con pantalonero y 2 percheros telescópicos. Dos cajones, estantería para ropa y zapatero verrtical.",
-	"images" : []
+	"id" : "16",
+	"base" : "image/furniture/library-1/",
+	"thumbnail" : "thumbnail.jpg",
+	"title" : "",
+	"description" : "",
+	"images" : ["01.jpg", "02.jpg"]
 }, {
-	"thumbnail" : "thumb-18.jpg",
-	"title" : "Mesada para Notebook",
-	"description" : "Con cajón, pequeña para escribir, leer o trabajar con una notebook.",
-	"images" : []
+	"id" : "17",
+	"base" : "image/furniture/light-table-0/",
+	"thumbnail" : "thumbnail.jpg",
+	"title" : "",
+	"description" : "",
+	"images" : ["01.jpg", "02.jpg"]
 }, {
-	"thumbnail" : "thumb-19.jpg",
-	"title" : "Porta Revistas Recibidor",
-	"description" : "Ideal como recibidor para dejar las llaves, decorar la entrada y almacenar revistas. Patinada en blanco, hecha con pallets.",
-	"images" : []
+	"id" : "18",
+	"base" : "image/furniture/spice-rack-0/",
+	"thumbnail" : "thumbnail.jpg",
+	"title" : "",
+	"description" : "",
+	"images" : ["01.jpg"]
+}, {
+	"id" : "19",
+	"base" : "image/furniture/table-0/",
+	"thumbnail" : "thumbnail.jpg",
+	"title" : "",
+	"description" : "",
+	"images" : ["01.jpg", "02.jpg", "03.jpg", "04.jpg", "05.jpg", "06.jpg"]
+}, {
+	"id" : "20",
+	"base" : "image/furniture/table-1/",
+	"thumbnail" : "thumbnail.jpg",
+	"title" : "",
+	"description" : "",
+	"images" : ["01.jpg", "02.jpg", "03.jpg", "04.jpg"]
+}, {
+	"id" : "21",
+	"base" : "image/furniture/table-2/",
+	"thumbnail" : "thumbnail.jpg",
+	"title" : "",
+	"description" : "",
+	"images" : ["01.jpg", "02.jpg", "03.jpg", "04.jpg", "05.jpg", "06.jpg", "07.jpg", "08.jpg", "09.jpg", "10.jpg"]
+}, {
+	"id" : "22",
+	"base" : "image/furniture/table-3/",
+	"thumbnail" : "thumbnail.jpg",
+	"title" : "",
+	"description" : "",
+	"images" : ["01.jpg", "02.jpg", "03.jpg", "04.jpg", "05.jpg", "06.jpg", "07.jpg", "08.jpg", "09.jpg", "10.jpg", "11.jpg"]
+}, {
+	"id" : "23",
+	"base" : "image/furniture/table-4/",
+	"thumbnail" : "thumbnail.jpg",
+	"title" : "",
+	"description" : "",
+	"images" : ["01.jpg", "02.jpg"]
+}, {
+	"id" : "24",
+	"base" : "image/furniture/table-5/",
+	"thumbnail" : "thumbnail.jpg",
+	"title" : "",
+	"description" : "",
+	"images" : ["01.jpg", "02.jpg", "03.jpg", "04.jpg", "05.jpg", "06.jpg", "07.jpg", "08.jpg", "09.jpg", "10.jpg"]
 }]
